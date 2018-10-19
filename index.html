@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css"  rel="stylesheet" type="text/css">
-    <title></title>
+    <title>Epicodus Track Suggester</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Epicodus Track Suggester</h1>
 
+      <h4>Hi there!</h4>
+
+      <p>So, you are thinking about learning a programming language but you aren't sure which one to learn. Take this quiz to get some suggestions about which language you should start with.</p>
+
+      <p>Let's get started!</p>
+      <form id="name">
+        <div class="form-group">
+          <label for="nameInput">First things first. What is your name?</label>
+          <input id="nameInput" type="text" class="form-control">
+        </div>
+      </form>
+
+      <form class ="question">
+        <p>Which type of company would you prefer working at?</p>
+          <div class="form-check">
+            <input type="radio" name="question1" value="1" checked>
+            <label>
+              A large, well established company with many employees
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question1" value="2">
+              <label>
+              A smaller startup company that may be more flexible and has fewer employees
+            </label>
+          </div>
+
+      <button type="submit" class="btn btn-primary">Soulmate</button>
+        </form>
+
+
+    </div>
   </body>
 </html>
