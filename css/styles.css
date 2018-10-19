@@ -14,6 +14,11 @@ body {
 .trackSuggester, #reset{
   display: none;
 }
+.buttons1 {
+  padding: 3%;
+  text-align: center;
+}
+
 #logos {
   padding-top: 5%;
   padding-left: 7%;
@@ -28,9 +33,7 @@ img {
   font-style: italic;
   margin-top: 25px;
 }
-#submitResponses, #reset {
-  
-}
+
 #suggest {
   display: none;
 }
