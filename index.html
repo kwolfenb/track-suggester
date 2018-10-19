@@ -16,79 +16,122 @@
       <p>So, you are thinking about learning a programming language but you aren't sure which one to learn. Take this quiz to get some suggestions about which language you should start with.</p>
 
       <p>Let's get started!</p>
-      <form id="name">
-        <div class="form-group">
-          <label for="nameInput">First things first. What is your name?</label>
-          <input id="nameInput" type="text" class="form-control">
-        </div>
-      </form>
-
-      <form class ="question">
-        <p>Which type of company would you prefer working at?</p>
-        <div class="form-check">
-          <input type="radio" name="question1" value="1" checked>
-          <label>
-            A large, well established company with many employees
-          </label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="question1" value="2">
-            <label>
-            A smaller startup company that may be more flexible and has fewer employees
-          </label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="question1" value="2">
-            <label>
-              Something in between -- a medium-sized company
-          </label>
-        </div>
-      </form>
-      <form class ="question">
-        <p>Which kind of programming would you prefer?</p>
-        <div class="form-check">
-          <input type="radio" name="question2" value="1" checked>
-          <label>
-            Front End -- focusing on design, creating look and feel of a website or product
-          </label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="question2" value="2">
-            <label>
-              Back End -- focusing on the server side of development, how the application or site actually works
-          </label>
-        </div>
-      </form>
-      <form class ="question">
-        <p>Which of the following sounds most appealing?</p>
-        <div class="form-check">
-          <input type="radio" name="question3" value="1" checked>
-          <label>
-            Developing mobile applications
-          </label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="question3" value="2">
-            <label>
-              Building business software
-            </label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="question3" value="3">
-            <label>
-              Designing and building webpages for a variety of customers
-            </label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="question3" value="3">
-            <label>
-              Building interactive web applications with dynamic activities
-            </label>
-        </div>
-      </form>
-
-      <button type="submit" class="btn btn-primary">Submit!</button>
+      <form id="trackSuggester">
+        <form id="name">
+          <div class="form-group">
+            <label for="nameInput">First things first. What is your name?</label>
+            <input id="nameInput" type="text" class="form-control">
+          </div>
         </form>
+        <form class ="question">
+          <p>Which type of company would you prefer working at?</p>
+          <div class="form-check">
+            <input type="radio" name="question1" value="1" checked>
+            <label>
+              A large, well established company with many employees
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question1" value="2">
+              <label>
+                Something in between--a medium-sized company
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question1" value="3">
+            <label>
+              A smaller startup company that may be more flexible and has fewer employees
+            </label>
+          </div>
+        </form>
+        <form class ="question">
+          <p>Which kind of programming would you prefer?</p>
+          <div class="form-check">
+            <input type="radio" name="question2" value="css" checked>
+            <label>
+              Front End--focusing on design, creating look and feel of a website or product
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question2" value="0">
+              <label>
+                Back End -- focusing on the server side of development, how the application or site actually works
+            </label>
+          </div>
+        </form>
+        <form class ="question">
+          <p>Which of the following sounds most appealing?</p>
+          <div class="form-check">
+            <input type="radio" name="question3" value="android" checked>
+            <label>
+              Developing mobile applications
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question3" value="1">
+              <label>
+                Building business software
+              </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question3" value="2">
+              <label>
+                Designing and building webpages for a variety of customers
+              </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question3" value="3">
+              <label>
+                Building interactive web applications with dynamic activities
+              </label>
+          </div>
+        </form>
+        <form class ="question">
+          <p>Are you interested in developing games?</p>
+          <div class="form-check">
+            <input type="radio" name="question4" value="1" checked>
+            <label>
+              Yes! Console or PC videogames
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question4" value="android" checked>
+            <label>
+              Yes! Mobile phone games
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question4" value="2" checked>
+            <label>
+              No, I'm not interested in game development
+            </label>
+          </div>
+        </form>
+        <form class ="question">
+          <p>Do you plan to start your own tech startup?</p>
+          <div class="form-check">
+            <input type="radio" name="question5" value="3" checked>
+            <label>
+              No, I am looking for a stable job
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question5" value="2" checked>
+            <label>
+              Possibly, this is something I would consider
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="question5" value="3" checked>
+            <label>
+              Yes! I already have an idea for my new company
+            </label>
+          </div>
+        </form>
+
+
+        <button type="submit" class="btn btn-primary">Submit!</button>
+      </form>
 
 
     </div>
