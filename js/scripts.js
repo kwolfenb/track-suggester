@@ -11,6 +11,7 @@ $(document).ready(function() {
     var q5 = parseInt($("input:radio[name=question5]:checked").val());
     var sum = (q1 + q3 + q4 + q5);
 
+    $("#nameOutput").text(name);
 
     if (q2 === "css") {
       $("#android, #c, #php, #ruby").hide();
