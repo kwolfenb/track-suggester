@@ -12,22 +12,22 @@
       <div class="intro">
         <div class="jumbotron">
           <h1>Epicodus Track Suggester</h1>
-          <p>Find out what works best for you</p>
+          <p>Find out which track is right for <em>you!</em></p>
           <div class="row" id="logos">
             <div class="col-md-2">
-              <p>col1</p>
+              <img src="img/ruby.png" alt="bootstrap">
             </div>
             <div class="col-md-2">
-              <img src="bootstrap.png" alt="bootstrap">
+              <img src="img/bootstrap.png" alt="bootstrap">
             </div>
             <div class="col-md-2">
-              <p>col1</p>
+              <img src="img/c.jpg" alt="bootstrap">
             </div>
             <div class="col-md-2">
-              <p>col1</p>
+              <img src="img/java.jpg" alt="bootstrap">
             </div>
             <div class="col-md-2">
-              <p>col1</p>
+              <img src="img/php.png" alt="bootstrap">
             </div>
           </div>
         </div>
@@ -38,11 +38,11 @@
       </div>
       <form class="trackSuggester">
           <div class="form-group">
-            <label for="nameInput">First things first. What is your name?</label>
+            <label for="nameInput"><span class="question">First things first. What is your name?</span></label>
             <input id="nameInput" type="text" class="form-control">
           </div>
+          <p class="question">Which type of company would you prefer working at?</p>
 <!-- QUESTION 1 -->
-          <p>Which type of company would you prefer working at?</p>
           <div class="form-check">
             <input type="radio" name="question1" value="1" checked>
             <label>
@@ -61,8 +61,8 @@
               A smaller startup company that may be more flexible and has fewer employees
             </label>
           </div>
+          <p class="question">Which kind of programming would you prefer?</p>
 <!-- QUESTION 2 -->
-          <p>Which kind of programming would you prefer?</p>
           <div class="form-check">
             <label>
             <input type="radio" name="question2" value="css">
@@ -75,8 +75,8 @@
               Back End -- focusing on the server side of development, how the application or site actually works
             </label>
           </div>
+          <p class="question">Which of the following sounds most appealing?</p>
 <!-- QUESTION 3 -->
-          <p>Which of the following sounds most appealing?</p>
           <div class="form-check">
             <input type="radio" name="question3" value="0" checked>
             <label>
@@ -101,8 +101,8 @@
                 Building interactive web applications with dynamic activities
               </label>
           </div>
+          <p class="question">Are you interested in developing games?</p>
 <!-- QUESTION 4 -->
-          <p>Are you interested in developing games?</p>
           <div class="form-check">
             <input type="radio" name="question4" value="0" checked>
             <label>
@@ -121,8 +121,8 @@
               No, I'm not interested in game development
             </label>
           </div>
+          <p class="question">Do you plan to start your own tech startup?</p>
 <!-- QUESTION 5 -->
-          <p>Do you plan to start your own tech startup?</p>
           <div class="form-check">
             <input type="radio" name="question5" value="1" checked>
             <label>
@@ -143,13 +143,13 @@
           </div>
 
 
-        <button type="submit" class="btn btn-primary">Submit!</button>
+        <button id="submitResponses" type="submit" class="btn btn-primary">Submit!</button>
+        <button id="reset" type="button" class="btn btn-warning" onclick="Refresh Page()">Start Over</button>
       </form>
-      <button id="reset" type="button" class="btn btn-warning" onclick="Refresh Page()">Start Over</button>
       <div id="results">
         <h3 id="suggest">Thanks <span id="nameOutput"></span>! Based on your responses we would suggest the <span class="track"></span> track: </h3>
         <div id="css">
-          <p>It seems like you are interested in front-end development. In the CSS/Design track, you will learn how to make webpages and applications that work well and look great. You will learn about layouts, navigation, colors and design. </p>
+        <p>It seems like you are interested in front-end development. In the CSS/Design track, you will learn how to make webpages and applications that work well and look great. You will learn about layouts, navigation, colors and design. </p>
           <p>This track, like all the Epicodus tracks includes introductory training in HTML, CSS, JavaScript, jQuery, and the use of GitHub.</p>
           <p>Remember, the most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language if needed. </p>
         </div>
