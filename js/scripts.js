@@ -19,27 +19,27 @@ $(document).ready(function() {
     if (q2 === "css") {
       $("#android, #c, #php, #ruby").hide();
       $("#suggest #css").show();
-      $(".track").text("CSS / Design");
+      $(".track").text("CSS/Design");
     }
     else if (q3 === 0 && q4 === 0) {
       $("#css, #c, #php, #ruby").hide();
       $("#android, #suggest").show();
-      $(".track").text("Java / Android");
+      $(".track").text("Java/Android");
     }
     else if (sum <= 6) {
       $("#css, #android, #php, #ruby").hide();
       $("#c, #suggest").show();
-      $(".track").text("C# / .NET");
+      $(".track").text("C#/.NET");
     }
     else if (sum > 6 && sum <= 9) {
       $("#css, #android, #c, #ruby").hide();
       $("#php, #suggest").show();
-      $(".track").text("PHP / Drupal");
+      $(".track").text("PHP/Drupal");
     }
     else if (sum > 9) {
       $("#css, #android, #c, #php").hide();
       $("#ruby, #suggest").show();
-      $(".track").text("Ruby / Drupal");
+      $(".track").text("Ruby/Rails");
     }
 
   });
